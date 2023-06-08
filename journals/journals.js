@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     bookCard.appendChild(publishDateElement);
   
     const button = document.createElement("button");
-    button.textContent = "Buy Now";
+    button.textContent = "Request Book";
     button.classList.add("buy-button");
     bookCard.appendChild(button);
   
