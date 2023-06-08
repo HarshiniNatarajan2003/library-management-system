@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>LMS</title>
+    
+    <link rel="stylesheet" href="message.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">LMS</span>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">LMS</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="../start.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Home</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="../books/books.html" class="nav-link">
+                <i class="bx bx-book-open icon"></i>
+                <span class="link">Books</span>
+              </a>
+            </li>
+            <li class="list">
+                <a href="../journals/journals.html" class="nav-link">
+                  <i class="bx bx-receipt icon"></i>
+                  <span class="link">Journals</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="../fine amount/fine amount.html" class="nav-link">
+                  <i class="bx bx-wallet icon"></i>
+                  <span class="link">Fine amount</span>
+                </a>
+              </li>
+              
+            <li class="list">
+              <a href="../message/message.html" class="nav-link">
+                <i class="bx bx-message-rounded icon"></i>
+                <span class="link">Messages</span>
+              </a>
+            </li>
+            
+          </ul>
+
+          <div class="bottom-cotent">
+            
+            <li class="list">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+<br>
+<br>
+<br>
+
+
+<div class="container">
+
+ 
+<div class="wrapper">
+  <header>Send us a Message</header>
+  <form
+  action="https://formspree.io/f/mzbqlywn"
+  method="POST" id="form"
+>
+    <div class="dbl-field">
+      <div class="field">
+        <input type="text" name="Name" placeholder="Enter your Name">
+        <i class='fas fa-user'></i>
+      </div>
+      
+      <div class="field">
+        <input type="text" name="Email" placeholder="Enter your Email">
+        <i class='fas fa-envelope'></i>
+      </div>
+    </div>
+    <div class="dbl-field">
+      <div class="field">
+        <input type="text" name="Phone" placeholder="Enter your Phone">
+        <i class='fas fa-phone-alt'></i>
+      </div>
+      
+    </div>
+    <div class="message">
+      <textarea placeholder="Write your Message" name="Message"></textarea>
+      <i class="material-icons"></i>
+    </div>
+    <div class="button-area">
+      <button type="submit">Send Message</button>
+      <span></span>
+    </div>
+  </form>
+</div>
+      
+                
+
+
+    <script src="message.js"></script>
+  </body>
+</html>

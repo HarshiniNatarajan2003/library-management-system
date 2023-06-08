@@ -1,0 +1,306 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100%;
+  background: #fbfcfc;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.logo .menu-icon {
+  color: #707070;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.logo .logo-name {
+  color: #707070;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+nav.open .sidebar {
+  left: 0;
+}
+
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+
+.sidebar-content .list {
+  list-style: none;
+}
+
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.lists .nav-link:hover {
+  background-color: #4070f4;
+}
+
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 260px;
+  pointer-events: auto;
+}
+.filter-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.count-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-item label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.count-item span {
+  display: inline-block;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.filter-count {
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+}
+
+.count-item label {
+  color: #707070;
+}
+
+.count-item span {
+  background: #4070f4;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+  color: #fff;
+}
+
+
+#book-container {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.book-card {
+  
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  padding: 10px;
+  width: 350px;
+  height: 320px;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #707070;
+  box-shadow: 4px 4px 8px rgba(40, 9, 212, 0.2);
+  
+
+}
+
+.book-card:hover {
+ 
+  transform: rotateX(10deg) rotateY(8deg);
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters ::placeholder{
+  color: #4070f4;
+}
+.filters input {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  
+  background-color: #fff;
+  box-shadow: 4px 4px 4px 4px rgba(43, 20, 133, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.filters input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(64, 112, 244, 0.8);
+}
+
+
+.book-card .book-title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.book-card .book-author {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #888;
+}
+
+
+.buy-button {
+  background-color: #4070f4;  
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+}
+
+.buy-button:hover {
+  background-color: #0e46e0; 
+}
+
+.my-swal-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+.my-swal-confirm-button:hover {
+  background-color: #4070f4;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  
+}
+
+.pagination button {
+  border-radius: 5px;
+  justify-content: space-around;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #4070f4;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0f41cb;
+}
+.pagination button:active{
+ color: white;
+}

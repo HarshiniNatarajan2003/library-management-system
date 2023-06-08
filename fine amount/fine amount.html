@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>LMS</title>
+   
+    <link rel="stylesheet" href="fine amount.css" />
+    
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">LMS</span>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">LMS</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="../start.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Home</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="../books/books.html" class="nav-link">
+                <i class="bx bx-book-open icon"></i>
+                <span class="link">Books</span>
+              </a>
+            </li>
+            <li class="list">
+                <a href="../journals/journals.html" class="nav-link">
+                  <i class="bx bx-receipt icon"></i>
+                  <span class="link">Journals</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="../fine amount/fine amount.html" class="nav-link">
+                  <i class="bx bx-wallet icon"></i>
+                  <span class="link">Fine amount</span>
+                </a>
+              </li>
+              
+            <li class="list">
+              <a href="../message/message.html" class="nav-link">
+                <i class="bx bx-message-rounded icon"></i>
+                <span class="link">Messages</span>
+              </a>
+            </li>
+            
+          </ul>
+
+          <div class="bottom-cotent">
+            
+            <li class="list">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    
+    <div class="container">
+        <h1>Fine Amount</h1>
+        <form id="paymentForm">
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" required>
+          <label for="cardName">Cardholder Name:</label>
+          <input type="text" id="cardName" required>
+          <label for="expiryDate">Expiry Date:</label>
+          <input type="text" id="expiryDate" required>
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" required>
+          <label for="cvv">Amount</label>
+          <input type="text" id="cvv" required>
+          
+          <button type="submit">Pay Now</button>
+        </form>
+      </div>
+    <section class="overlay"></section>
+
+    <script src="fine amount.js"></script>
+  </body>
+</html>

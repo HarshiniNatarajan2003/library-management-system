@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(to bottom right, #4070f4, #09b7d6, #141415);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-box {
+    background: linear-gradient(to bottom right, #4070f4, #09b7d6, #e8a71b);
+    border-radius: 20px;
+    width: 300px;
+    height: 320px;
+    padding: 20px;
+    box-shadow: 8px 8px 16px rgba(8, 8, 8, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: gradientAnimation 4s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text-field {
+    background: #e6e6e6;
+    height: 40px;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin: 5px 0;
+    color: #686868;
+}
+
+.btn-style {
+    width: 68%;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to bottom right, #4070f4, #09b7d6, #38383e);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-style:hover {
+    background-color: #646b78;
+    color: #e0e5ec;
+}
+
+.an-btn {
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 11pt;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.an-btn:hover {
+    color: #646b78;
+}
+
+#register-div {
+    display: none;
+}
+
+#result-box {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16pt;
+    color: white;
+}

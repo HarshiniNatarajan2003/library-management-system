@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>LMS</title>
+   <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="style.css" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">LMS</span>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">LMS</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="./start.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Home</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="./books/books.html" class="nav-link">
+                <i class="bx bx-book-open icon"></i>
+                <span class="link">Books</span>
+              </a>
+            </li>
+            <li class="list">
+                <a href="./journals/journals.html" class="nav-link">
+                  <i class="bx bx-receipt icon"></i>
+                  <span class="link">Journals</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="./fine amount/fine amount.html" class="nav-link">
+                  <i class="bx bx-wallet icon"></i>
+                  <span class="link">Fine amount</span>
+                </a>
+              </li>
+              
+            <li class="list">
+              <a href="./message/message.html" class="nav-link">
+                <i class="bx bx-message-rounded icon"></i>
+                <span class="link">Messages</span>
+              </a>
+            </li>
+            
+          </ul>
+
+          <div class="bottom-cotent">
+            
+            <li class="list">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+   </div>
+   <section class="main swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="./assets/download (1).jpg" alt="" class="image" />
+        <div class="image-data">
+          <h2>
+           LIBRARY MANAGEMENT SYSTEM
+          </h2>
+          <a href="books/books.html" class="button">EXPLORE</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./assets/download.jpg" alt="" class="image" />
+        <div class="image-data">
+          <h2>
+            LIBRARY MANAGEMENT SYSTEM
+           </h2>
+           <a href="books/books.html" class="button">EXPLORE</a>
+         
+           </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./assets/images (1).jpg" alt="" class="image" />
+        <div class="image-data">
+          <h2>
+            LIBRARY MANAGEMENT SYSTEM
+           </h2>
+           <a href="books/books.html" class="button">EXPLORE</a>
+         </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./assets/images.jpg" alt="" class="image" />
+        <div class="image-data">
+          <h2>
+            LIBRARY MANAGEMENT SYSTEM
+           </h2>
+           <a href="books/books.html" class="button">EXPLORE</a>
+         </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+    <script src="script.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+
+   
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
